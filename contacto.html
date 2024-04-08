@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class = "header_nosotros">
+        <div class="header_box contenedor">
+            <div class="header_box-caja">
+                <div class="header_box-top p-0">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="navbar">
+                        <a href="contacto.html">Contacto</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="h2_section t_center">Contacto</h2>
+        <img src="img/destacada3.jpg" alt="Imagen Principal">
+        <div class="contenedor">
+            <h2 class ="h2_section">Rellena el Formulario</h2>
+
+            <div class="formulario">
+                <form action="">
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+                        <label for="form_input_nombre">Nombre:</label>
+                        <input type="text" name="form_input_nombre" id="form_input_nombre" placeholder="Tu Nombre">
+
+                        <label for="form_input_email">E-mail:</label>
+                        <input type="email" name="form_input_email" id="form_input_email" placeholder="Tu E-mail">
+
+                        <label for="form_input_telefono">Telefono:</label>
+                        <input type="tel" name="form_input_telefono" id="form_input_telefono" placeholder="Tu Telefono">
+
+                        <label for="form_input_mensaje">Mensaje:</label>
+                        <textarea name="form_input_mensaje" id="form_input_mensaje" cols="30" rows="5"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información sobre Propiedad</legend>
+
+                        <label for="form_input_ventaocompra">Venta o Compra</label>
+                        <select name="form_input_ventaocompra" id="form_input_ventaocompra">
+                            <option value="" disabled selected>-- Seleccione --</option>
+                            <option value="Venta">Venta</option>
+                            <option value="Compra">Compra</option>
+                        </select>
+
+                        <label for="form_input_presupuesto">Presupuesto:</label>
+                        <input type="number" min ="0" name="form_input_presupuesto" id="form_input_presupuesto">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contacto</legend>
+
+                        <p>Forma de Contacto:</p>
+                        <div class="form_forma_contacto">
+                            <label for="">Telefono</label>
+                            <input type="radio" name="form_input_forma_contacto" id="form_input_forma_contacto_Telefono" value="Telefono">
+                            <label for="">E-mail</label>
+                            <input type="radio" name="form_input_forma_contacto" id="form_input_forma_contacto_E-mail" value="E-mail">
+                        </div>
+
+                        <p>Si eligio Telefono, seleccione la Fecha y Hora</p>
+
+                        <label for="form_input_fecha">Fecha:</label>
+                        <input type="date" name="form_input_fecha" id="form_input_fecha">
+
+                        <label for="form_input_hora">Hora:</label>
+                        <input type="time" min ="09:00" max="19:00" name="form_input_hora" id="form_input_hora">
+
+                    </fieldset>
+                    <input type="submit" value="Enviar" class ="btn btn_verde">
+                </form>
+            </div>
+        </div>  
+    </main>
+    <footer class ="footer-site">
+        <div class="footer-site-box contenedor">
+            <nav class="navbar">
+                <a href="contacto.html">Contacto</a>
+                <a href="blog.html">Blog</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+            </nav>
+            <h3>Todos los derechos reservados &copy;</h3>
+        </div>
+    </footer>
+</body>
+</html>
